@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberSec Portfolio | Your Name</title>
+    <title>CyberSec Portfolio | Imesh Sanjana Bandara</title>
+    <meta name="description" content="Cybersecurity Portfolio of Imesh Sanjana Bandara - Computer Security Undergraduate, Web Developer, and Security Researcher">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Animated Background -->
+    <!-- Futuristic Background Elements -->
     <div class="animated-bg"></div>
-    
-    <!-- Sticky Navbar -->
+    <div class="hex-grid"></div>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Sticky Navbar with Holographic Effect -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#home" class="nav-logo">My Portfolio:~</a>
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">My Portfolio:~</span>
+                <span class="logo-cursor">_</span>
+            </a>
             <div class="nav-links">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link" data-text="Home">Home</a>
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
                 <button id="theme-toggle" class="theme-btn">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -28,131 +37,252 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Advanced Typing Effect -->
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="terminal-text">$ <span class="typed" data-typed="Hello, I'm Imesh Sanjana Bandara"></span><span class="cursor">|</span></h1>
-                <p class="subtitle">Computer Security Undergraduate | WEB Developer | Mobile App Developer</p>
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                </div>
+                <h1 class="terminal-text">$ <span class="typed" data-typed='["Hello, I'm Imesh Sanjana Bandara", "Computer Security Undergraduate", "Web Developer", "Security Researcher"]'></span><span class="cursor">|</span></h1>
+                <p class="subtitle">Specializing in network security, penetration testing, and secure application development</p>
                 <div class="social-links">
-                    <a href="https://github.com/SanjanaJaya" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/sanjanajaya" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://tryhackme.com/p/yourusername" target="_blank"><i class="fas fa-lock"></i></a>
+                    <a href="https://github.com/SanjanaJaya" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span class="link-hover-effect"></span>
+                    </a>
+                    <a href="https://linkedin.com/in/sanjanajaya" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="link-hover-effect"></span>
+                    </a>
+                    <a href="https://tryhackme.com/p/yourusername" target="_blank" aria-label="TryHackMe">
+                        <i class="fas fa-lock"></i>
+                        <span class="link-hover-effect"></span>
+                    </a>
+                    <a href="#" class="resume-btn" aria-label="Download Resume">
+                        <i class="fas fa-file-download"></i>
+                        <span>Resume</span>
+                        <span class="link-hover-effect"></span>
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/images/profile.jpg" alt="Your Name" class="profile-img">
                 <div class="img-border"></div>
+                <img src="assets/images/profile.jpg" alt="Imesh Sanjana Bandara" class="profile-img">
+                <div class="holographic-overlay"></div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section with Animated Terminal -->
     <section id="about" class="section">
-        <h2 class="section-title">$ about_me.txt</h2>
-        <div class="terminal-box">
-            <p><span class="command">Who am I</span> - Cybersecurity undergraduate specializing in network security</p>
-            <p><span class="command">Skills</span> - Python, C, C#, Flutter, Linux, Java</p>
-            <p><span class="command">Education</span> - BSc. Hons Computer Security, University of Plymouth</p>
-            <p><span class="command">Certs</span> - Ethical Hacking By Linkedin Learning</p>
+        <h2 class="section-title neon">$ about_me.txt</h2>
+        <div class="terminal-box holographic">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">about_me.txt</span>
+            </div>
+            <div class="terminal-content">
+                <p><span class="command">whoami</span> - Cybersecurity specialist with focus on network security and ethical hacking</p>
+                <p><span class="command">skills</span> - Python • C • C# • Flutter • Linux • Java • Nmap • Metasploit</p>
+                <p><span class="command">education</span> - BSc. Hons Computer Security, University of Plymouth (2021-2024)</p>
+                <p><span class="command">certs</span> - Ethical Hacking (LinkedIn) • Network+ (In Progress)</p>
+                <p><span class="command">interests</span> - CTF Competitions • Malware Analysis • Secure Coding</p>
+                <p class="blinking-cursor">_</p>
+            </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section with 3D Hover Effects -->
     <section id="projects" class="section">
-        <h2 class="section-title">$ ls ./projects/</h2>
+        <h2 class="section-title neon">$ ls ./projects/</h2>
         <div class="projects-grid">
             <!-- Project 1 -->
-            <div class="project-card">
+            <div class="project-card holographic">
                 <div class="project-img">
-                    <img src="assets/images/projects/vuln-scanner.jpg" alt="Vulnerability Scanner">
+                    <img src="assets/images/NSBM Mobile App.jpg" alt="Vulnerability Scanner">
+                    <div class="project-overlay">
+                        <h3></h3>
+                    </div>
                 </div>
                 <div class="project-content">
-                    <h3>Automated Network Scanner</h3>
-                    <p>Python tool that identifies vulnerabilities in local networks using Nmap and custom scripts.</p>
+                    <h3>NSBM Finder Mobile Application</h3>
+                    <p>A Flutter-based mobile application designed to enhance the campus experience at NSBM Green University by simplifying navigation, communication, and resource booking for both students and lecturers.</p>
                     <div class="project-tech">
-                        <span>Python</span>
-                        <span>Nmap</span>
-                        <span>Scapy</span>
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Javascript</span>
                     </div>
-                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View on GitHub</a>
+                    <div class="project-links">
+                        <a href="https://github.com/SanjanaJaya/Finder" class="project-link" aria-label="View on GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                    </div>
                 </div>
+                <div class="project-glow"></div>
             </div>
             
             <!-- Project 2 -->
-            <div class="project-card">
+            <div class="project-card holographic">
                 <div class="project-img">
                     <img src="assets/images/projects/ctf-writeup.jpg" alt="CTF Writeup">
+                    <div class="project-overlay">
+                        <h3>HTB Challenge Writeups</h3>
+                    </div>
                 </div>
                 <div class="project-content">
                     <h3>HTB Challenge Writeups</h3>
-                    <p>Detailed solutions for HackTheBox machines with exploit development breakdowns.</p>
+                    <p>Detailed solutions for HackTheBox machines with exploit development breakdowns and mitigation strategies.</p>
                     <div class="project-tech">
                         <span>Reverse Engineering</span>
                         <span>Binary Exploitation</span>
+                        <span>Penetration Testing</span>
                     </div>
-                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Read Writeups</a>
+                    <div class="project-links">
+                        <a href="#" class="project-link" aria-label="Read Writeups">
+                            <i class="fas fa-book-open"></i>
+                            <span>Writeups</span>
+                        </a>
+                        <a href="#" class="project-link" aria-label="View Challenges">
+                            <i class="fas fa-flag"></i>
+                            <span>Challenges</span>
+                        </a>
+                    </div>
                 </div>
+                <div class="project-glow"></div>
             </div>
             
             <!-- Project 3 -->
-            <div class="project-card">
+            <div class="project-card holographic">
                 <div class="project-img">
                     <img src="assets/images/projects/keylogger.jpg" alt="Keylogger Analysis">
+                    <div class="project-overlay">
+                        <h3>Malware Analysis</h3>
+                    </div>
                 </div>
                 <div class="project-content">
                     <h3>Malware Analysis: Keylogger</h3>
-                    <p>Behavioral and code analysis of a Windows keylogger with detection rules.</p>
+                    <p>Behavioral and code analysis of a Windows keylogger with detection rules and prevention techniques.</p>
                     <div class="project-tech">
                         <span>IDA Pro</span>
                         <span>YARA</span>
                         <span>Wireshark</span>
+                        <span>Malware</span>
                     </div>
-                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Report</a>
+                    <div class="project-links">
+                        <a href="#" class="project-link" aria-label="View Report">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Report</span>
+                        </a>
+                        <a href="#" class="project-link" aria-label="View Analysis">
+                            <i class="fas fa-search"></i>
+                            <span>Analysis</span>
+                        </a>
+                    </div>
                 </div>
+                <div class="project-glow"></div>
             </div>
             
             <!-- Project 4 -->
-            <div class="project-card">
+            <div class="project-card holographic">
                 <div class="project-img">
                     <img src="assets/images/projects/firewall.jpg" alt="Firewall Config">
+                    <div class="project-overlay">
+                        <h3>Firewall Rules</h3>
+                    </div>
                 </div>
                 <div class="project-content">
                     <h3>Enterprise Firewall Rules</h3>
-                    <p>Designed and implemented iptables rules for a mock corporate network.</p>
+                    <p>Designed and implemented iptables rules for a mock corporate network with intrusion detection.</p>
                     <div class="project-tech">
                         <span>iptables</span>
                         <span>Linux</span>
                         <span>Network Security</span>
+                        <span>IDS</span>
                     </div>
-                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Configs</a>
+                    <div class="project-links">
+                        <a href="#" class="project-link" aria-label="View Configs">
+                            <i class="fas fa-code"></i>
+                            <span>Configs</span>
+                        </a>
+                        <a href="#" class="project-link" aria-label="View Documentation">
+                            <i class="fas fa-file-code"></i>
+                            <span>Docs</span>
+                        </a>
+                    </div>
                 </div>
+                <div class="project-glow"></div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with Interactive Terminal -->
     <section id="contact" class="section">
-        <h2 class="section-title">$ ./contact.sh</h2>
-        <div class="terminal-box">
-            <p><span class="command">echo "Let's connect!"</span></p>
-            <div class="contact-methods">
-                <a href="mailto:your.email@example.com" class="contact-btn">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-                <a href="https://github.com/yourusername" class="contact-btn">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://linkedin.com/in/yourusername" class="contact-btn">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
+        <h2 class="section-title neon">$ ./contact.sh</h2>
+        <div class="terminal-box holographic">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">contact.sh</span>
             </div>
-            <p><span class="command">gpg --import</span> <a href="#" class="gpg-link">Download my PGP Key</a></p>
+            <div class="terminal-content">
+                <p><span class="command">echo</span> "Let's collaborate on security solutions!"</p>
+                <div class="contact-methods">
+                    <a href="mailto:imesh.sanjana@example.com" class="contact-btn" aria-label="Send Email">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                        <span class="btn-hover-effect"></span>
+                    </a>
+                    <a href="https://github.com/SanjanaJaya" class="contact-btn" aria-label="View GitHub Profile">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                        <span class="btn-hover-effect"></span>
+                    </a>
+                    <a href="https://linkedin.com/in/sanjanajaya" class="contact-btn" aria-label="View LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                        <span class="btn-hover-effect"></span>
+                    </a>
+                    <a href="#" class="contact-btn" aria-label="View TryHackMe Profile">
+                        <i class="fas fa-lock"></i>
+                        <span>TryHackMe</span>
+                        <span class="btn-hover-effect"></span>
+                    </a>
+                </div>
+                <p><span class="command">gpg --import</span> <a href="#" class="gpg-link">Download my PGP Key</a></p>
+                <p><span class="command">./send_message.sh</span> <span class="blinking-cursor">_</span></p>
+            </div>
         </div>
     </section>
+
+    <!-- Footer with Digital Clock -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="digital-clock">
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                <span id="timezone">UTC</span>
+            </div>
+            <p>© <span id="year">2023</span> Imesh Sanjana Bandara. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <span class="separator">|</span>
+                <a href="#" class="footer-link">Legal</a>
+                <span class="separator">|</span>
+                <a href="#" class="footer-link">Security</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
+    <script src="scripts/particles.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/theme-toggle.js"></script>
+    <script src="scripts/clock.js"></script>
 </body>
 </html>
