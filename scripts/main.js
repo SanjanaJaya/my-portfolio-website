@@ -36,34 +36,20 @@ document.querySelectorAll('.section').forEach(section => {
     observer.observe(section);
 });
 
-// Terminal typing effects
-const nameText = "Hello, I'm Imesh Sanjana";
-const titleText = "Computer Security Undergraduate";
-const nameElement = document.getElementById('name-text');
-const titleElement = document.getElementById('title-text');
+// Terminal typing effect for hero text
+const heroText = document.querySelector('.typed');
+const text = heroText.getAttribute('data-typed');
 let i = 0;
-let j = 0;
 
-function typeName() {
-    if (i < nameText.length) {
-        nameElement.innerHTML += nameText.charAt(i);
+function typeWriter() {
+    if (i < text.length) {
+        heroText.innerHTML += text.charAt(i);
         i++;
-        setTimeout(typeName, 100);
-    } else {
-        // Start typing title after name finishes
-        setTimeout(typeTitle, 500);
-    }
-}
-
-function typeTitle() {
-    if (j < titleText.length) {
-        titleElement.innerHTML += titleText.charAt(j);
-        j++;
-        setTimeout(typeTitle, 100);
+        setTimeout(typeWriter, 100);
     }
 }
 
 // Start typing effect
 window.onload = function() {
-    typeName();
+    typeWriter();
 };
