@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSec Portfolio | Your Name</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    
+    <!-- Sticky Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">root@portfolio:~</a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="terminal-line">
+                <span class="terminal-prompt">$</span>
+                <span class="typed-text" id="name-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <div class="terminal-line">
+                <span class="terminal-prompt">></span>
+                <span class="typed-text" id="title-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="subtitle">Penetration Tester | CTF Player | Security Enthusiast</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://tryhackme.com/p/yourusername" target="_blank"><i class="fas fa-lock"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/profile.jpg" alt="Imesh Sanjana" class="profile-img">
+            <div class="img-border"></div>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">$ about_me.txt</h2>
+        <div class="terminal-box">
+            <p><span class="command">whoami</span> - Cybersecurity undergrad specializing in network security</p>
+            <p><span class="command">skills</span> - Python, Metasploit, Wireshark, Burp Suite, Linux</p>
+            <p><span class="command">education</span> - BSc Computer Security, University of XYZ</p>
+            <p><span class="command">certs</span> - eJPT (in progress), TryHackMe Top 10%</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">$ ls ./projects/</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/images/projects/vuln-scanner.jpg" alt="Vulnerability Scanner">
+                </div>
+                <div class="project-content">
+                    <h3>Automated Network Scanner</h3>
+                    <p>Python tool that identifies vulnerabilities in local networks using Nmap and custom scripts.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Nmap</span>
+                        <span>Scapy</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View on GitHub</a>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/images/projects/ctf-writeup.jpg" alt="CTF Writeup">
+                </div>
+                <div class="project-content">
+                    <h3>HTB Challenge Writeups</h3>
+                    <p>Detailed solutions for HackTheBox machines with exploit development breakdowns.</p>
+                    <div class="project-tech">
+                        <span>Reverse Engineering</span>
+                        <span>Binary Exploitation</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Read Writeups</a>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/images/projects/keylogger.jpg" alt="Keylogger Analysis">
+                </div>
+                <div class="project-content">
+                    <h3>Malware Analysis: Keylogger</h3>
+                    <p>Behavioral and code analysis of a Windows keylogger with detection rules.</p>
+                    <div class="project-tech">
+                        <span>IDA Pro</span>
+                        <span>YARA</span>
+                        <span>Wireshark</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Report</a>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="assets/images/projects/firewall.jpg" alt="Firewall Config">
+                </div>
+                <div class="project-content">
+                    <h3>Enterprise Firewall Rules</h3>
+                    <p>Designed and implemented iptables rules for a mock corporate network.</p>
+                    <div class="project-tech">
+                        <span>iptables</span>
+                        <span>Linux</span>
+                        <span>Network Security</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Configs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">$ ./contact.sh</h2>
+        <div class="terminal-box">
+            <p><span class="command">echo "Let's connect!"</span></p>
+            <div class="contact-methods">
+                <a href="mailto:your.email@example.com" class="contact-btn">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://github.com/yourusername" class="contact-btn">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/yourusername" class="contact-btn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+            <p><span class="command">gpg --import</span> <a href="#" class="gpg-link">Download my PGP Key</a></p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/theme-toggle.js"></script>
+</body>
+</html>
